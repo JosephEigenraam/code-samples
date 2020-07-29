@@ -1,5 +1,5 @@
 #!/bin/bash
-# wait-for-it.sh
+# wait-for-mysql.sh
 
 set -e
 
