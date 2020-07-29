@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  # The name of our built service
+  ghost:
+    # Configuration options applied when the image is built
+    build:
+      # Path to where the Dockerfile is located
+      context: .
+    # Automaticlaly restart the service if it crashes
+    restart: always
+    # Map a port inside the image externally so we can access services hosted in the image (external:internal)
+    ports:
+      - 3001:2368
+    # Set environment variables to pass to the image
+    environment:
+      # This is Ghost specific configuration
+      - url=http://localhost:3001/
+    # entrypoint: ["docker-entrypoint.sh"]
+    # command: ["node", "current/index.js"]
