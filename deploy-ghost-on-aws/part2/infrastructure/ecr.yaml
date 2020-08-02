@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Create an ECR repository
+
+Resources: 
+  BlogRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+        RepositoryName: !Ref 'AWS::StackName'    
+ 
