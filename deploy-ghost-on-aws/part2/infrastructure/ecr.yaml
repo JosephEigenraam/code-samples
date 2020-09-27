@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: 2010-09-09
+# A brief description of what this template is for
+Description: Create an ECR repository
+
+# A list of resources to create
+Resources:
+  # The name of the resource we are creating
+  BlogRepository:
+    Type: AWS::ECR::Repository
+    Properties:
+      # Define a name for the repository to more easily identify it later
+      RepositoryName: !Ref "AWS::StackName"
