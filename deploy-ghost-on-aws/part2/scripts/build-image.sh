@@ -7,7 +7,7 @@ ECS_CLUSTER="<ECS CLUSTER ARN>"
 # The name of the service as defined in Cloudformation
 SERVICE="ghost-on-aws"
 
-# Pull the commands in this section from the AWS Concolse
+# Pull the commands in this section from the AWS Console
 #################
 
 # Log into AWS ECR inside Docker
